@@ -1,0 +1,6 @@
+#coding=utf-8
+from django import forms
+
+class SearchForm(forms.Form):
+    moviename = forms.CharField(label='搜一搜', max_length=20)
+

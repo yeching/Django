@@ -1,0 +1,6 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'movieapp/style.css' %}" />
+<h1>一共找到{{count}}部相关的</h1>
+{%for movie in movies %} 
+	<h4><a href="/movieapp/movie/{{movie.id}}">{{ movie }}</a></h4>
+{% endfor %}

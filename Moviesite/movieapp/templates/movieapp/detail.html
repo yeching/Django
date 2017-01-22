@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'movieapp/style.css' %}" />
+<!--yeqing's website-->
+<h4><a href="/movieapp/">返回首页</a></h4>
+<h1>电影名称：{{ movie.title }}</h1>
+<hr>
+<img src="{{movie.image}}">
+<body>
+<p>年代：{{ movie.year }}</p>
+<p>国家：{{ movie.countries}}</p>
+<p>导演：{{ movie.directors }}</p>
+<p>主演：{{ movie.casts }}</p>
+<p>电影简介:{{ movie.summary }}</p>
+</body>

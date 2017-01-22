@@ -1,0 +1,9 @@
+<h1>注册页面：</h1>
+<form method = 'post' enctype="multipart/form-data">
+    {% csrf_token %}
+    {{userform}}
+    <input type="submit" value = "ok" />
+</form>
+<br>
+<a href="/movieapp/login">登陆</a>
+</body>

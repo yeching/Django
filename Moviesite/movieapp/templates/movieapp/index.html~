@@ -1,0 +1,6 @@
+<h2><a href="/movieapp">返回主页</a></h2>
+<body>
+<h1>welcome {{username}} !</h1>
+<br>
+<a href="/movieapp/logout">退出</a>
+</body>

@@ -1,0 +1,9 @@
+body {
+    background: red url("images/background.jpg") no-repeat right top;
+}
+h1,h4 {
+color: green;
+}
+p{
+color: red;
+}

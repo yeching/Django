@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<meta charset="UTF-8">
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'movieapp/style.css' %}" />
+<h4>欢迎来到</h4>
+<h1>YeChing's Movie Site</h1>
+<h4><a href="/movieapp/login">登入</a>
+</h4><h4><a href="/movieapp/regist">注册</a></h4>
+<hr/>
+<form action="/movieapp/search" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+
+{% if movies %}
+<ul>
+    {% for movie in movies %}
+        <li><a href="/movieapp/movie/{{movie.id}}">{{ movie.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endif %}
+</html>
